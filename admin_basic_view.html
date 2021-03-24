@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/adminPage.css">
+        <link rel="stylesheet" type="text/css" href="css/dropDown.css">
+         <!-- Google Fonts -->
+         <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
+        <title>"Project Web 2020-2021"</title>
+    </head>
+
+    <body>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <div class="header_box">
+            <div>
+                <img class="header_logo" src="css/icons/logo2.png">
+            </div>
+            <a class="header_title" href="adminPage.php" style="text-decoration:none;">OnPoint</a>
+            <a id="logout_btn" class="btn btn-danger" href="logout.php">Log Out</a>
+        </div>
+
+        
+        <div class="info_box">
+
+                    <div id="options" class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn" style="border-radius: 8px;">Options</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="adminPage.php">Home</a>
+                            <a href="adminAVGwait.php">AVG Wait</a>
+                            <a href="adminTTL.php">HTTP Headers</a>
+                            <a href="adminMap.php">Polyline Graph</a>
+                        </div>
+            
+                
+
+                    <script>
+                        /* When the user clicks on the button, 
+                        toggle between hiding and showing the dropdown content */
+                        function myFunction() {
+                            document.getElementById("myDropdown").classList.toggle("show");
+                        }
+
+                        // Close the dropdown if the user clicks outside of it
+                        window.onclick = function(event) {
+                            if (!event.target.matches('.dropbtn')) {
+                                var dropdowns = document.getElementsByClassName("dropdown-content");
+                                var i;
+                                for (i = 0; i < dropdowns.length; i++) {
+                                    var openDropdown = dropdowns[i];
+                                    if (openDropdown.classList.contains('show')) {
+                                        openDropdown.classList.remove('show');
+                                    }
+                                }
+                        }
+                    }
+                    </script>
+                    </div>
+                
+
+                <div>
+                    <img class="admin_pic" src="css/icons/admin.png">
+                </div>
+
+                <div class="info">
+                    <div style="font-size: 22px;">Admin</div>
+                    <div class="profile_info">
+                        <div style="margin-top: 20px;">Number of users</div>    
+                        <div id="no_users">
+                            <script>
+                                    $.ajax({ 
+                                    url: "php/no_users.php",
+                                    type: "GET",  
+                                    success: function(data) { 
+                                        document.getElementById("no_users").innerHTML = data;
+                                    } 
+                                }); 
+                            </script>
+                        </div>
+                        <div style="margin-top: 20px;">Number of unique domains</div>
+                        <div id="no_domains">
+                            <script>
+                                $.ajax({ 
+                                url: "php/no_domains.php",
+                                type: "GET",  
+                                success: function(data) { 
+                                    document.getElementById("no_domains").innerHTML = data;
+                                } 
+                            }); 
+                            </script>
+                        </div>
+                        <div style="margin-top: 20px;">Number of unique ISPs</div>            
+                        <div id="no_isp">
+                        <script>
+                                $.ajax({ 
+                                    url: "php/no_isp.php",
+                                    type: "GET",  
+                                    success: function(data) { 
+                                        document.getElementById("no_isp").innerHTML = data;
+                                    } 
+                                }); 
+                            </script>
+                        </div>
+                    </div>
+                </div>    
+
+                <div>
+                    <p class="team_info">Devs O.Ampelikiotis E.Kolovos</p>
+                </div>
+
+        </div>
+
+    </body>
+</html>
