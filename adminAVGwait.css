@@ -1,0 +1,63 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.admin_wait{
+	position: absolute;
+	right: 0;
+	top: 10%;
+	height: 90%;
+	width: 80%;
+	float: left;
+	background-color: rgba(221, 218, 218, 0.726);
+	font-family: "Archivo", sans-serif;
+
+}
+
+.box1{
+    position: relative;
+	width: 30%;
+	height: 100%;
+	float: left;
+}
+
+    .cb_box{
+        width: 90%;
+        height: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 40px;
+        overflow: auto;
+        float:left;
+    }
+
+	.cb_box_title{
+		font-size: 20px;
+		margin-left: 20%;
+		margin-bottom: 5px;
+		margin-top: 10px;
+	}
+
+    #apply_filters{
+        margin-top: 20px;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+.box2{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+    .graph_box{
+        position: relative;
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: 5%;
+		float: left;
+    }

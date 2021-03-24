@@ -1,0 +1,94 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.info_box{
+		position: absolute;
+		top: 10%;
+		left: 0;
+		height: 90%;
+		width: 20%;
+		background-color: rgba(146, 143, 194, 0.726);
+		float: left;
+		font-family: "Archivo", sans-serif;
+
+	}
+	
+	#options{
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		border-radius: 8px;
+		float: left;
+	}
+
+	.admin_pic{
+		width: 30%;
+		margin-left:35%;
+		margin-right: 35%;
+		margin-top: 40%;
+		float: left;
+	}
+
+	.info{
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+		margin-top: 30px;
+		font-size: 22px;
+		text-align: center;
+		font-family: "Archivo", sans-serif;
+		float: left;	
+	}
+
+	.team_info{
+		font-size: 10px;
+		position: absolute;
+		bottom: 5px;
+		left: 10px;
+		font-family: "Archivo", sans-serif;
+		float: left;	
+	}
+
+.chart_box{
+	position: absolute;
+	right: 0;
+	top: 10%;
+	height: 90%;
+	width: 80%;
+	float: left;
+	background-color: rgba(221, 218, 218, 0.726);
+	font-family: "Archivo", sans-serif;
+}
+
+	.chart_hbox1{
+		position: relative;
+		width: 30%;
+		float: left;
+	}
+	
+		.pie_chart_container{
+			margin-top: 5px;
+			margin-left: 5%;
+			margin-right: 5%;
+			width: 90%;
+		}
+
+	.chart_hbox2{
+		position: relative;
+		width: 70%;
+		float: left;
+		overflow: auto;
+	}
+		
+		.bar_chart_container{
+			position: relative;
+			width: 90%;
+			height: 100%;
+			margin-left: 5%;
+			margin-right: 5%;
+			margin-top: 40px;
+			float: left;
+		}
+

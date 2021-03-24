@@ -1,0 +1,17 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.form{ 
+		width: 20%;
+		margin-left: 40%;
+		margin-right: 40%; 
+		margin-top: 20%;
+		padding: 20px; 
+		font-size: 14px;
+		font-family: "Archivo", sans-serif;
+		float : left;
+		margin-top:100px; 
+		background-color: rgba(146, 143, 194, 0.726);
+	}

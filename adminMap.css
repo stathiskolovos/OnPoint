@@ -1,0 +1,22 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.admin_map_box{
+    position: absolute;
+	right: 0;
+	top: 10%;
+    height: 90%;
+    width: 80%;
+    float: left;
+    background-color: rgba(221, 218, 218, 0.726);
+}
+
+#map{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    float: left;
+    z-index: 0;
+}
